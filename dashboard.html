@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- JS Link -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/178d8111b2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="left-box d-flex justify-content-between flex-column">
+        <div>
+            <ul class="list-group new-chat">
+                <li class="list-group-item bg-transparent text-white pointer">
+                    <i class="fa fa-plus text-white"></i>&nbsp; &nbsp; New Chat
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <hr class="text-white">
+            <ul class="list-group">
+                <li class="list-group-item bg-transparent text-white mb-2 mt-1 pointer">
+                    <i class="fas fa-trash"></i>&nbsp; &nbsp; Clear Conversations
+                </li>
+                <li class="list-group-item bg-transparent text-white mb-2 mt-1 pointer">
+                    <i class="fas fa-moon"></i>&nbsp; &nbsp; Dark Mode
+                </li>
+                <li class="list-group-item bg-transparent text-white mb-2 mt-1 pointer">
+                    <i class="fas fab fa-discord"></i>&nbsp; &nbsp; OpenAI Discord
+                </li>
+                <li class="list-group-item bg-transparent text-white mb-2 mt-1 pointer">
+                    <i class="fas fa-arrow-up-right-from-square"></i>&nbsp; &nbsp; Update & FAQ
+                </li>
+                <li class="list-group-item bg-transparent text-white mb-2 mt-1 pointer">
+                    <i class="fas fa-arrow-right-from-bracket"></i>&nbsp; &nbsp; Logout
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="right-box">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+
+                <br>
+                <h1 class="mb-3">Upload Data From Here !</h1>
+
+                <form class="upload-form">
+                    <input type="text" name="question" class="form-control mb-3 shadow-lg rounded question"
+                        placeholder="Enter Question..." required>
+                    <textarea name="answer" cols="30" rows="15" class="form-control mb-3 shadow-lg rounded answer"
+                        placeholder="Enter Answer..." required></textarea>
+                    <button type="submit" class="btn btn-primary mt-3 w-100 shadow-lg">Store Data</button>
+                </form>
+
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+    <!-- JS FILE LINK -->
+    <script src="./js/dashboard.js"></script>
+
+</body>
+
+</html>

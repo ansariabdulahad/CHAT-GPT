@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Start left side box coding */
+
+.left-box {
+    width: 17%;
+    background-color: #202123;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px 10px;
+}
+
+.new-chat {
+    border: 0.2px solid #fff !important;
+}
+
+.pointer {
+    cursor: pointer;
+    border: none !important;
+}
+
+/* Start right side box coding */
+
+.right-box {
+    width: 83%;
+    margin-left: 17%;
+}
+
+.right-box .text-box {
+    width: 32%;
+    padding: 10px;
+    margin: 0px auto;
+    border-radius: 10px;
+    background-color: rgb(218, 215, 215, 0.5);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.right-box .text-box:hover {
+    background-color: #D9D9E3;
+}
+
+.right-box .icon-area span {
+    position: absolute;
+    right: 23px;
+    top: 10px;
+}
+
+.right-box small {
+    font-size: 11px;
+}
+
+.answer-box .icon-area small {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #E15CDF;
+    color: #fff;
+}
+
+.answer-box span {
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+}
